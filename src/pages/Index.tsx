@@ -4,6 +4,7 @@ import StatsSection from "@/components/StatsSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import IndustrySection from "@/components/IndustrySection";
 import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <FeaturesSection />
       <IndustrySection />
       <CTASection />
+      <Footer />
     </div>
   );
 };
