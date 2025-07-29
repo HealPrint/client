@@ -10,7 +10,7 @@ const Features = () => {
     {
       icon: MessageSquare,
       title: "Intelligent Symptom Assessment",
-      description: "AI-powered conversational interface that naturally guides users through comprehensive health assessments.",
+      description: "Advanced conversational interface that naturally guides users through comprehensive health assessments.",
       details: [
         "Natural language processing for symptom description",
         "Multi-domain health questioning (skin, hair, hormonal, digestive)",
@@ -22,7 +22,7 @@ const Features = () => {
     {
       icon: Brain,
       title: "Advanced Pattern Recognition",
-      description: "Sophisticated AI algorithms that identify connections between symptoms across different body systems.",
+      description: "Sophisticated algorithms that identify connections between symptoms across different body systems.",
       details: [
         "Cross-system health correlation analysis", 
         "Machine learning-based pattern detection",
@@ -76,7 +76,7 @@ const Features = () => {
     {
       icon: Zap,
       title: "Real-time Analysis",
-      description: "Instant AI analysis and recommendations within seconds of completing assessment."
+      description: "Instant analysis and recommendations within seconds of completing assessment."
     },
     {
       icon: Users,
@@ -138,13 +138,13 @@ const Features = () => {
           <h1 className="text-5xl lg:text-6xl font-bold font-heading text-foreground leading-tight mb-6">
             Advanced{" "}
             <span className="bg-gradient-to-r from-health-primary to-health-secondary bg-clip-text text-transparent">
-              AI features
+              health features
             </span>{" "}
             for holistic health
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
-            Discover the cutting-edge technology and intelligent features that make HealPrint AI 
+            Discover the cutting-edge technology and intelligent features that make HealPrint 
             the most comprehensive holistic health platform available today.
           </p>
           
@@ -167,7 +167,7 @@ const Features = () => {
               Core Platform Features
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Four powerful AI-driven modules working together to provide comprehensive 
+              Four powerful advanced modules working together to provide comprehensive 
               health insights and personalized recommendations.
             </p>
           </div>
@@ -270,7 +270,7 @@ const Features = () => {
               Benefits for Everyone
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              HealPrint AI creates value for individuals, healthcare providers, 
+              HealPrint creates value for individuals, healthcare providers, 
               and entire communities across Africa and beyond.
             </p>
           </div>
@@ -304,7 +304,7 @@ const Features = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold font-heading text-foreground mb-4">
-              Why Choose HealPrint AI?
+              Why Choose HealPrint?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               See how our comprehensive approach compares to traditional healthcare solutions.
@@ -319,7 +319,7 @@ const Features = () => {
                     <tr>
                       <th className="text-left p-6 font-semibold">Feature</th>
                       <th className="text-center p-6 font-semibold">Traditional Healthcare</th>
-                      <th className="text-center p-6 font-semibold">HealPrint AI</th>
+                      <th className="text-center p-6 font-semibold">HealPrint</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200">
@@ -364,7 +364,7 @@ const Features = () => {
               Experience the future of healthcare
             </h2>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Join thousands already using HealPrint AI to take control of their health 
+              Join thousands already using HealPrint to take control of their health 
               with intelligent, personalized, and culturally-sensitive care.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

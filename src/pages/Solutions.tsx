@@ -10,8 +10,8 @@ const Solutions = () => {
   const solutions = [
     {
       icon: MessageSquare,
-      title: "AI Chat Diagnostics",
-      description: "Conversational AI that understands your symptoms across skin, hair, digestive, hormonal, and mental health.",
+      title: "Advanced Chat Diagnostics",
+      description: "Intelligent conversational interface that understands your symptoms across skin, hair, digestive, hormonal, and mental health.",
       features: [
         "Natural language symptom assessment",
         "Multi-domain health analysis",
@@ -62,7 +62,7 @@ const Solutions = () => {
     {
       icon: Stethoscope,
       title: "Healthcare Providers",
-      description: "Enhance patient consultations with AI-powered holistic assessments and treatment planning.",
+      description: "Enhance patient consultations with advanced holistic assessments and treatment planning.",
       benefits: [
         "Reduced diagnostic time",
         "Comprehensive patient insights",
@@ -105,7 +105,7 @@ const Solutions = () => {
             <div className="space-y-8">
               <Badge className="bg-health-primary/10 text-health-primary border-health-primary/20">
                 <Brain className="w-4 h-4 mr-2" />
-                AI-Powered Solutions
+                Professional Solutions
               </Badge>
               
               <h1 className="text-5xl lg:text-6xl font-bold font-heading text-foreground leading-tight">
@@ -118,7 +118,7 @@ const Solutions = () => {
               
               <p className="text-xl text-muted-foreground leading-relaxed">
                 From individual health assessments to enterprise healthcare solutions, 
-                our AI-powered platform adapts to serve communities, providers, and organizations 
+                our advanced platform adapts to serve communities, providers, and organizations 
                 across the African continent and beyond.
               </p>
               
@@ -152,7 +152,7 @@ const Solutions = () => {
               Our Core Solutions
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Four powerful AI-driven modules that work together to provide comprehensive 
+              Four powerful advanced modules that work together to provide comprehensive 
               holistic health insights and personalized treatment recommendations.
             </p>
           </div>
@@ -305,7 +305,7 @@ const Solutions = () => {
               Ready to transform your healthcare delivery?
             </h2>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Join leading healthcare organizations already using HealPrint AI to provide 
+              Join leading healthcare organizations already using HealPrint to provide 
               better, more comprehensive care to their communities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

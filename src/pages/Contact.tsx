@@ -26,13 +26,13 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: ["hello@healprint.ai", "support@healprint.ai", "partnerships@healprint.ai"],
+      details: ["hello@healprint.com", "support@healprint.com", "partnerships@healprint.com"],
       color: "text-purple-600 bg-purple-50"
     },
     {
       icon: Clock,
       title: "Support Hours",
-      details: ["Monday - Friday: 8AM - 6PM WAT", "Saturday: 10AM - 4PM WAT", "24/7 AI Chat Support"],
+      details: ["Monday - Friday: 8AM - 6PM WAT", "Saturday: 10AM - 4PM WAT", "24/7 Expert Chat Support"],
       color: "text-orange-600 bg-orange-50"
     }
   ];
@@ -363,7 +363,7 @@ const Contact = () => {
                 </h3>
                 <p className="text-muted-foreground">
                   We typically respond to all inquiries within 24 hours during business days. 
-                  For urgent matters, our AI chat support is available 24/7.
+                  For urgent matters, our expert chat support is available 24/7.
                 </p>
               </CardContent>
             </Card>

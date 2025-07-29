@@ -26,7 +26,7 @@ const About = () => {
     {
       icon: Award,
       title: "Excellence",
-      description: "We maintain the highest standards in AI accuracy, data security, and user experience."
+      description: "We maintain the highest standards in diagnostic accuracy, data security, and user experience."
     }
   ];
 
@@ -39,7 +39,7 @@ const About = () => {
     {
       name: "Kwame Asante",
       role: "Chief Technology Officer", 
-      description: "Former Google AI researcher, expert in medical ML and diagnostic systems.",
+      description: "Former Google researcher, expert in medical ML and diagnostic systems.",
     },
     {
       name: "Fatima Al-Rashid",
@@ -72,13 +72,13 @@ const About = () => {
                 <span className="bg-gradient-to-r from-health-primary to-health-secondary bg-clip-text text-transparent">
                   healthcare
                 </span>{" "}
-                through AI innovation
+                through innovation
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
-                HealPrint AI was born from a simple observation: traditional healthcare often treats symptoms 
+                HealPrint was born from a simple observation: traditional healthcare often treats symptoms 
                 in isolation, missing the interconnected nature of human health. We're building the future 
-                of holistic, AI-powered diagnostics to bridge this gap.
+                of holistic, advanced diagnostics to bridge this gap.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -111,7 +111,7 @@ const About = () => {
           </h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Founded by Sheane Cosmetics, HealPrint AI emerged from years of witnessing the gap between 
+              Founded by Sheane Cosmetics, HealPrint emerged from years of witnessing the gap between 
               surface-level beauty treatments and underlying health issues. Our customers consistently 
               faced recurring skin and hair problems that no single product could solve.
             </p>
@@ -121,8 +121,8 @@ const About = () => {
               time and tools to make these connections, especially in underserved communities.
             </p>
             <p>
-              That's why we're building HealPrint AI: to democratize access to holistic health insights, 
-              combining the wisdom of natural remedies with the power of artificial intelligence.
+              That's why we're building HealPrint: to democratize access to holistic health insights, 
+              combining the wisdom of natural remedies with the power of advanced technology.
             </p>
           </div>
         </div>
@@ -173,7 +173,7 @@ const About = () => {
               Meet Our Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A diverse group of healthcare professionals, AI researchers, and product experts 
+              A diverse group of healthcare professionals, researchers, and product experts 
               united by our mission to transform healthcare.
             </p>
           </div>

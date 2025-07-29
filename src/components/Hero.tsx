@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="space-y-6">
               <Badge variant="secondary" className="text-sm font-medium px-4 py-2 bg-health-primary/10 text-health-primary border-health-primary/20">
                 <Sparkles className="w-4 h-4 mr-2" />
-                AI-Powered Health Revolution
+                Professional Health Platform
               </Badge>
               
               <h1 className="text-5xl lg:text-7xl font-bold font-heading text-foreground leading-tight tracking-tight">
@@ -26,7 +26,7 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
-                Transforming skin, hair & internal health through AI-powered diagnostics, 
+                Transforming skin, hair & internal health through advanced diagnostics, 
                 personalized natural solutions, and preventative care for African communities worldwide.
               </p>
             </div>
@@ -68,7 +68,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-foreground">24/7</div>
-                  <div className="text-sm text-muted-foreground">AI Support</div>
+                  <div className="text-sm text-muted-foreground">Expert Support</div>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@ const Hero = () => {
             <div className="relative bg-white rounded-2xl shadow-2xl p-2 border border-slate-200">
               <img
                 src={heroImage}
-                alt="AI Health Diagnostics Platform"
+                alt="Professional Health Diagnostics Platform"
                 className="w-full h-auto rounded-xl shadow-lg"
               />
             </div>

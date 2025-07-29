@@ -13,7 +13,7 @@ const Header = () => {
             <div className="w-10 h-10 bg-gradient-to-r from-health-primary to-health-secondary rounded-xl flex items-center justify-center shadow-lg">
               <Heart className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-bold font-heading text-foreground">HealPrint AI</span>
+            <span className="text-2xl font-bold font-heading text-foreground">HealPrint</span>
           </a>
 
           <nav className="hidden lg:flex items-center gap-8">
