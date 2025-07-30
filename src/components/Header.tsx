@@ -1,5 +1,6 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
-import { Heart, Menu, X } from "lucide-react";
+import { Heart, Menu, X, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const Header = () => {
@@ -11,7 +12,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           <a href="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 bg-gradient-to-br from-health-primary via-blue-600 to-health-secondary rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-              <Heart className="w-6 h-6 text-white" />
+              <Sparkles className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-bold font-heading text-foreground group-hover:text-health-primary transition-colors">
               HealPrint
@@ -39,14 +40,14 @@ const Header = () => {
 
           <div className="flex items-center gap-4">
             <a href="/contact">
-              <Button variant="ghost" className="hidden sm:inline-flex font-medium hover:bg-slate-100 transition-colors">
+              <button className="hidden sm:inline-flex cursor-pointer text-xs sm:text-sm md:text-base bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 transition-all duration-200 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl font-semibold shadow-sm hover:shadow-md">
                 Sign In
-              </Button>
+              </button>
             </a>
             <a href="/contact">
-              <Button variant="health" className="hidden sm:inline-flex font-medium px-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <button className="hidden sm:inline-flex cursor-pointer text-xs sm:text-sm md:text-base bg-white border border-health-primary text-slate-800 hover:bg-health-primary/10 hover:text-health-primary transition-all duration-200 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl font-semibold shadow-sm hover:shadow-md">
                 Get Started
-              </Button>
+              </button>
             </a>
             <Button 
               variant="ghost" 
@@ -77,14 +78,14 @@ const Header = () => {
               </a>
               <div className="px-4 pt-6 border-t border-slate-200 space-y-3">
                 <a href="/contact">
-                  <Button variant="ghost" className="w-full justify-start font-medium">
+                  <button className="w-full cursor-pointer text-xs sm:text-sm md:text-base bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 hover:border-slate-400 transition-all duration-200 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl font-semibold shadow-sm hover:shadow-md">
                     Sign In
-                  </Button>
+                  </button>
                 </a>
                 <a href="/contact">
-                  <Button variant="health" className="w-full shadow-lg">
+                  <button className="w-full cursor-pointer text-xs sm:text-sm md:text-base bg-white border border-health-primary text-slate-800 hover:bg-health-primary/10 hover:text-health-primary transition-all duration-200 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl font-semibold shadow-sm hover:shadow-md">
                     Get Started
-                  </Button>
+                  </button>
                 </a>
               </div>
             </nav>

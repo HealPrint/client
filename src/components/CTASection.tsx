@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MessageSquare, Users, Globe, ArrowRight, Sparkles } from "lucide-react";
@@ -39,17 +40,17 @@ const CTASection = () => {
 
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
                 <a href="/contact">
-                  <Button variant="health" size="lg" className="text-sm sm:text-base lg:text-lg px-6 sm:px-8 lg:px-10 py-4 sm:py-5 lg:py-6 font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
-                    <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 mr-2 sm:mr-3 group-hover:animate-pulse" />
+                  <button className="w-full sm:w-auto cursor-pointer text-xs sm:text-sm md:text-base bg-white border border-health-primary text-slate-800 hover:bg-health-primary/10 hover:text-health-primary transition-all duration-200 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl font-semibold shadow-sm hover:shadow-md group">
+                    <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:animate-pulse inline" />
                     Start Free Assessment
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Button>
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform inline" />
+                  </button>
                 </a>
                 <a href="/contact">
-                  <Button variant="outline" size="lg" className="text-sm sm:text-base lg:text-lg px-6 sm:px-8 lg:px-10 py-4 sm:py-5 lg:py-6 font-semibold border-2 border-slate-200 hover:bg-slate-50 transition-all duration-300 group">
+                  <button className="w-full sm:w-auto cursor-pointer text-xs sm:text-sm md:text-base bg-slate-800 border border-slate-700 text-white hover:bg-slate-700 hover:border-slate-600 transition-all duration-200 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-2xl sm:rounded-3xl font-semibold shadow-sm hover:shadow-md group">
                     Join Beta Program
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform duration-300" />
-                  </Button>
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform inline" />
+                  </button>
                 </a>
               </div>
 

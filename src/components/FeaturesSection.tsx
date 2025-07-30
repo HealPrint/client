@@ -1,3 +1,4 @@
+import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageSquare, Brain, ArrowRight } from "lucide-react";
 
@@ -39,7 +40,7 @@ const FeaturesSection = () => {
           {/* Mobile Phone Mockup with Content Inside */}
           <div className="relative">
             {/* Phone Frame */}
-            <div className="relative bg-white rounded-3xl shadow-2xl p-2 border border-slate-200/50 hover:shadow-3xl transition-all duration-500 hover:scale-105 max-w-sm lg:max-w-md">
+            <div className="relative bg-white rounded-3xl shadow-sm p-2 border border-slate-200/50 hover:shadow-md transition-all duration-300 hover:scale-105 max-w-sm lg:max-w-md">
               {/* Phone Screen Content */}
               <div className="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-4 sm:p-6 min-h-[600px] sm:min-h-[700px]">
                 {/* App Header */}
@@ -56,7 +57,7 @@ const FeaturesSection = () => {
                 {/* App Content */}
                 <div className="space-y-4">
                   {/* Welcome Message */}
-                  <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-100">
+                  <div className="bg-white rounded-xl p-4 border border-slate-100">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 bg-gradient-to-br from-health-primary/10 to-blue-500/10 rounded-lg flex items-center justify-center">
                         <MessageSquare className="w-4 h-4 text-health-primary" />
@@ -76,7 +77,7 @@ const FeaturesSection = () => {
                     {features.map((feature, index) => {
                       const Icon = feature.icon;
                       return (
-                        <div key={index} className="bg-white rounded-xl p-3 shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                        <div key={index} className="bg-white rounded-xl p-3 border border-slate-100 hover:border-slate-200 transition-all duration-300">
                           <div className="flex items-center gap-3 mb-2">
                             <div className={`w-6 h-6 rounded-lg ${feature.color} flex items-center justify-center`}>
                               <Icon className="w-3 h-3" />
@@ -99,7 +100,7 @@ const FeaturesSection = () => {
                   </div>
 
                   {/* Quick Actions */}
-                  <div className="bg-gradient-to-r from-health-primary/10 to-health-secondary/10 rounded-xl p-3">
+                  <div className="bg-gradient-to-r from-health-primary/5 to-health-secondary/5 rounded-xl p-3 border border-slate-100">
                     <div className="text-xs font-semibold text-slate-900 mb-2">Quick Actions</div>
                     <div className="flex gap-2">
                       <button className="bg-health-primary text-white text-xs px-3 py-1 rounded-lg font-medium">
@@ -115,12 +116,12 @@ const FeaturesSection = () => {
             </div>
 
             {/* Floating Elements */}
-            <div className="absolute -top-2 -right-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-2 border border-slate-200/50 animate-scale-in">
+            <div className="absolute -top-2 -right-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-sm p-2 border border-slate-200/50">
               <div className="text-xs font-bold text-health-primary">87%</div>
               <div className="text-xs text-slate-600">Accuracy</div>
             </div>
             
-            <div className="absolute -bottom-2 -left-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-2 border border-slate-200/50 animate-scale-in">
+            <div className="absolute -bottom-2 -left-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-sm p-2 border border-slate-200/50">
               <div className="text-xs font-bold text-health-secondary">5min</div>
               <div className="text-xs text-slate-600">Assessment</div>
             </div>
