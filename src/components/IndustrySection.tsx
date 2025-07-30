@@ -1,86 +1,179 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Heart, Leaf, ArrowRight } from "lucide-react";
+import { Heart, Leaf, ArrowRight, CheckCircle, Star, Quote } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const industries = [
   {
     icon: Heart,
-    title: "Women's Health",
-    description: "AI-powered solutions for hormonal health, reproductive wellness, and comprehensive care for women across Africa.",
+    title: "Healthcare",
+    description: "Smart health chatbots deliver intelligent automation to streamline patient experiences.",
     features: [
-      "Hormonal balance analysis",
-      "PCOS & fertility insights", 
-      "Menstrual health tracking"
+      "Automated assessments",
+      "Symptom analysis", 
+      "Patient engagement"
     ],
-    color: "text-pink-600 bg-pink-50"
+    color: "text-blue-600 bg-gradient-to-br from-blue-50 to-indigo-50",
+    gradient: "from-blue-500 to-indigo-600",
+    customers: ["HealthTech", "Wellness", "CareAI"],
+    customerLogos: ["🏥", "🌿", "💊"]
   },
   {
     icon: Leaf,
-    title: "Natural Wellness",
-    description: "Holistic approaches combining traditional African remedies with modern AI diagnostics for sustainable health.",
+    title: "Wellness",
+    description: "Deliver tailored wellness experiences with scalable health support and natural recommendations.",
     features: [
-      "Natural remedy recommendations",
-      "Nutrition & lifestyle guidance",
-      "Preventative health strategies"
+      "Natural remedies",
+      "Lifestyle guidance",
+      "Preventative care"
     ],
-    color: "text-green-600 bg-green-50"
+    color: "text-green-600 bg-gradient-to-br from-green-50 to-emerald-50",
+    gradient: "from-green-500 to-emerald-600",
+    customers: ["NaturalCare", "MedPlus", "HealthSol"],
+    customerLogos: ["🌱", "⚕️", "🏥"]
+  }
+];
+
+const testimonials = [
+  {
+    company: "HealthTech",
+    logo: "🏥",
+    text: "HealPrint has transformed our patient care with seamless interaction and natural language understanding.",
+    industry: "Healthcare",
+    rating: 5
+  },
+  {
+    company: "Wellness",
+    logo: "🌿",
+    text: "The platform has revolutionized our wellness consultations, providing accurate diagnostics and personalized recommendations.",
+    industry: "Wellness",
+    rating: 5
+  },
+  {
+    company: "CareAI",
+    logo: "💊",
+    text: "Our healthcare delivery has been dramatically improved with HealPrint's intelligent automation.",
+    industry: "Healthcare",
+    rating: 5
   }
 ];
 
 const IndustrySection = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-gradient-to-br from-slate-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
-            Empowering health across{" "}
+        <div className="text-center mb-20">
+          <Badge variant="secondary" className="text-sm font-semibold px-4 py-2 bg-gradient-to-r from-health-primary/10 to-blue-500/10 text-health-primary border-health-primary/20 mb-4">
+            Industry
+          </Badge>
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            Empowering industries with smarter{" "}
             <span className="bg-gradient-to-r from-health-primary to-health-secondary bg-clip-text text-transparent">
-              African communities
+              health solutions
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Tailored AI solutions addressing the unique health challenges and opportunities 
-            across diverse African markets and beyond.
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Tailored solutions addressing unique health challenges across diverse markets.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 mb-20">
           {industries.map((industry, index) => {
             const Icon = industry.icon;
             return (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardHeader className="pb-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className={`w-12 h-12 rounded-lg ${industry.color} flex items-center justify-center`}>
-                      <Icon className="w-6 h-6" />
+              <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-white/80 backdrop-blur-sm group">
+                <CardHeader className="pb-8">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className={`w-16 h-16 rounded-2xl ${industry.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className="w-8 h-8" />
                     </div>
-                    <CardTitle className="text-2xl font-bold">
+                    <CardTitle className="text-2xl lg:text-3xl font-bold text-slate-900">
                       {industry.title}
                     </CardTitle>
                   </div>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
+                  <p className="text-slate-600 text-lg leading-relaxed">
                     {industry.description}
                   </p>
                 </CardHeader>
                 
-                <CardContent className="space-y-6">
-                  <div className="space-y-3">
+                <CardContent className="space-y-8">
+                  <div className="space-y-4">
                     {industry.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center gap-3">
-                        <div className="w-2 h-2 rounded-full bg-health-primary"></div>
-                        <span className="text-foreground font-medium">{feature}</span>
+                      <div key={featureIndex} className="flex items-center gap-4 group/item">
+                        <div className={`w-6 h-6 rounded-full bg-gradient-to-r ${industry.gradient} flex items-center justify-center group-hover/item:scale-110 transition-transform duration-300`}>
+                          <CheckCircle className="w-4 h-4 text-white" />
+                        </div>
+                        <span className="text-slate-700 font-medium text-lg">{feature}</span>
                       </div>
                     ))}
                   </div>
                   
-                  <Button variant="health-outline" className="w-full group">
+                  <div className="space-y-4">
+                    <p className="text-sm font-medium text-slate-500">Who using our services:</p>
+                    <div className="flex items-center gap-4">
+                      {industry.customers.map((customer, customerIndex) => (
+                        <div key={customerIndex} className="flex items-center gap-2 text-slate-600">
+                          <span className="text-lg">{industry.customerLogos[customerIndex]}</span>
+                          <span className="text-sm font-medium">{customer}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <Button variant="health-outline" className="w-full group/btn text-lg py-6 font-semibold">
                     Learn more
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
                   </Button>
                 </CardContent>
               </Card>
             );
           })}
+        </div>
+
+        {/* Customer Testimonials */}
+        <div className="text-center mb-16">
+          <Badge variant="secondary" className="text-sm font-semibold px-4 py-2 bg-gradient-to-r from-health-primary/10 to-blue-500/10 text-health-primary border-health-primary/20 mb-4">
+            Customer
+          </Badge>
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            Learn from customers using{" "}
+            <span className="bg-gradient-to-r from-health-primary to-health-secondary bg-clip-text text-transparent">
+              HealPrint
+            </span>
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white/80 backdrop-blur-sm">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="text-3xl">{testimonial.logo}</div>
+                  <div>
+                    <div className="font-bold text-slate-900">{testimonial.company}</div>
+                    <div className="flex items-center gap-1">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="relative mb-6">
+                  <Quote className="w-8 h-8 text-slate-300 absolute -top-2 -left-2" />
+                  <p className="text-slate-600 leading-relaxed pl-6">
+                    {testimonial.text}
+                  </p>
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <Badge variant="outline" className="text-xs">
+                    {testimonial.industry}
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
