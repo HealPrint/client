@@ -1,32 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MessageSquare, Sparkles, Users, Shield, Award } from "lucide-react";
-import heroImage from "@/assets/hero-illustration.jpg";
+import heroImage from "@/assets/hero-professional.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-health-accent via-white to-slate-50 pt-8">
-      <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10"></div>
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/30 pt-8">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-r from-blue-400/20 via-sky-300/20 to-blue-500/20 rounded-full blur-3xl opacity-30"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6">
-              <Badge variant="secondary" className="text-sm font-medium px-4 py-2 bg-health-primary/10 text-health-primary border-health-primary/20">
+              <Badge variant="secondary" className="text-sm font-medium px-6 py-3 bg-blue-50 text-blue-700 border-blue-200 rounded-full">
                 <Sparkles className="w-4 h-4 mr-2" />
-                Professional Health Platform
+                AI-Powered Health Platform
               </Badge>
               
-              <h1 className="text-5xl lg:text-7xl font-bold font-heading text-foreground leading-tight tracking-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold font-heading text-slate-900 leading-[1.1] tracking-tight">
                 The smartest{" "}
-                <span className="bg-gradient-to-r from-health-primary via-blue-600 to-health-secondary bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-600 via-sky-500 to-blue-700 bg-clip-text text-transparent">
                   holistic health
                 </span>{" "}
                 platform ever built
               </h1>
               
-              <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
-                Transforming skin, hair & internal health through advanced diagnostics, 
+              <p className="text-xl lg:text-2xl text-slate-600 max-w-2xl leading-relaxed font-light">
+                Transforming skin, hair & internal health through advanced AI diagnostics, 
                 personalized natural solutions, and preventative care for African communities worldwide.
               </p>
             </div>
@@ -75,8 +76,8 @@ const Hero = () => {
           </div>
 
           <div className="relative lg:pl-8">
-            <div className="absolute -inset-8 bg-gradient-to-r from-health-primary/20 via-blue-500/20 to-health-secondary/20 rounded-3xl blur-3xl opacity-60"></div>
-            <div className="relative bg-white rounded-2xl shadow-2xl p-2 border border-slate-200">
+            <div className="absolute -inset-8 bg-gradient-to-r from-blue-500/10 via-sky-500/10 to-blue-600/10 rounded-3xl blur-3xl opacity-60"></div>
+            <div className="relative bg-white rounded-2xl shadow-2xl p-3 border border-slate-200/50 backdrop-blur-sm">
               <img
                 src={heroImage}
                 alt="Professional Health Diagnostics Platform"
@@ -85,14 +86,14 @@ const Hero = () => {
             </div>
             
             {/* Floating Stats Cards */}
-            <div className="absolute -top-4 -left-4 bg-white rounded-xl shadow-lg p-4 border border-slate-200 animate-scale-in">
-              <div className="text-2xl font-bold text-health-primary">87%</div>
-              <div className="text-sm text-muted-foreground">Diagnostic Accuracy</div>
+            <div className="absolute -top-6 -left-6 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 border border-slate-200/50 animate-scale-in">
+              <div className="text-3xl font-bold text-blue-600">87%</div>
+              <div className="text-sm text-slate-600 font-medium">Diagnostic Accuracy</div>
             </div>
             
-            <div className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg p-4 border border-slate-200 animate-scale-in">
-              <div className="text-2xl font-bold text-health-secondary">5min</div>
-              <div className="text-sm text-muted-foreground">Average Assessment</div>
+            <div className="absolute -bottom-6 -right-6 bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 border border-slate-200/50 animate-scale-in">
+              <div className="text-3xl font-bold text-sky-600">5min</div>
+              <div className="text-sm text-slate-600 font-medium">Average Assessment</div>
             </div>
           </div>
         </div>
