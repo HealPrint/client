@@ -18,13 +18,13 @@ const Footer = () => {
               Empowering African communities with accessible, natural healthcare solutions.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-slate-400 hover:text-health-primary transition-colors">
+              <a href="https://twitter.com/healprintai" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-health-primary transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-health-primary transition-colors">
+              <a href="https://linkedin.com/company/healprint-ai" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-health-primary transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-health-primary transition-colors">
+              <a href="https://instagram.com/healprintai" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-health-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
