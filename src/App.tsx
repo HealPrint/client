@@ -12,6 +12,10 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+// Debug logging
+console.log("App component loaded");
+console.log("Available pages:", { Index, About, Solutions, Features, Contact, NotFound });
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
