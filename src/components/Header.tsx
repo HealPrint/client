@@ -38,12 +38,16 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button variant="ghost" className="hidden sm:inline-flex font-medium hover:bg-slate-100 transition-colors">
-              Sign In
-            </Button>
-            <Button variant="health" className="hidden sm:inline-flex font-medium px-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              Get Started
-            </Button>
+            <a href="/contact">
+              <Button variant="ghost" className="hidden sm:inline-flex font-medium hover:bg-slate-100 transition-colors">
+                Sign In
+              </Button>
+            </a>
+            <a href="/contact">
+              <Button variant="health" className="hidden sm:inline-flex font-medium px-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                Get Started
+              </Button>
+            </a>
             <Button 
               variant="ghost" 
               size="icon" 
@@ -72,12 +76,16 @@ const Header = () => {
                 Contact
               </a>
               <div className="px-4 pt-6 border-t border-slate-200 space-y-3">
-                <Button variant="ghost" className="w-full justify-start font-medium">
-                  Sign In
-                </Button>
-                <Button variant="health" className="w-full shadow-lg">
-                  Get Started
-                </Button>
+                <a href="/contact">
+                  <Button variant="ghost" className="w-full justify-start font-medium">
+                    Sign In
+                  </Button>
+                </a>
+                <a href="/contact">
+                  <Button variant="health" className="w-full shadow-lg">
+                    Get Started
+                  </Button>
+                </a>
               </div>
             </nav>
           </div>

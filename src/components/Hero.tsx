@@ -30,15 +30,19 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-12">
-            <Button variant="health" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
-              <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:animate-pulse" />
-              Start Free Assessment
-              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="health-outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 font-semibold hover:bg-slate-50 transition-all duration-300 group">
-              <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-              Watch Demo
-            </Button>
+            <a href="/contact">
+              <Button variant="health" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
+                <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5 mr-2 group-hover:animate-pulse" />
+                Start Free Assessment
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+            <a href="/contact">
+              <Button variant="health-outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 font-semibold hover:bg-slate-50 transition-all duration-300 group">
+                <Play className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                Watch Demo
+              </Button>
+            </a>
           </div>
         </div>
 
